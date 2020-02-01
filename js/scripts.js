@@ -6,9 +6,6 @@ const scContainer5 = document.getElementById('js--sc--container-5');
 const scContainer6 = document.getElementById('js--sc--container-6');
 
 let skullPosition = Math.floor(Math.random() * Math.floor(6));
-let outcomes = [0, 0, 0, 0, 0, 0];
-
-outcomes[skullPosition] = 1;
 
 const scratchcardConfig = {
   scratchType: SCRATCH_TYPE.CIRCLE,
