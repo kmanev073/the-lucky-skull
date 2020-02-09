@@ -5,7 +5,7 @@ const scContainer4 = document.getElementById('js--sc--container-4');
 const scContainer5 = document.getElementById('js--sc--container-5');
 const scContainer6 = document.getElementById('js--sc--container-6');
 
-let skullPosition = Math.floor(Math.random() * Math.floor(6));
+const skullPosition = Math.floor(Math.random() * Math.floor(6));
 
 const scratchcardConfig = {
   scratchType: SCRATCH_TYPE.CIRCLE,
@@ -30,6 +30,7 @@ const sc1 = new ScratchCard('#js--sc--container-1', {
 
 const sc2 = new ScratchCard('#js--sc--container-2', {
   ...scratchcardConfig,
+  containerWidth: scContainer2.offsetWidth,
   imageForwardSrc: 'images/srb.jpg',
   htmlBackground: skullPosition === 1 ? `<div class="inner_html"><img width="100%" height="100%" src="images/skull.jpg"></img></div>` : `<div class="inner_html"><p>Try again!</p></div>`,
   callback: function () {
@@ -42,6 +43,7 @@ const sc2 = new ScratchCard('#js--sc--container-2', {
 
 const sc3 = new ScratchCard('#js--sc--container-3', {
   ...scratchcardConfig,
+  containerWidth: scContainer3.offsetWidth,
   imageForwardSrc: 'images/uae.png',
   htmlBackground: skullPosition === 2 ? `<div class="inner_html"><img width="100%" height="100%" src="images/skull.jpg"></img></div>` : `<div class="inner_html"><p>Try again!</p></div>`,
   callback: function () {
@@ -54,6 +56,7 @@ const sc3 = new ScratchCard('#js--sc--container-3', {
 
 const sc4 = new ScratchCard('#js--sc--container-4', {
   ...scratchcardConfig,
+  containerWidth: scContainer4.offsetWidth,
   imageForwardSrc: 'images/fr.jpg',
   htmlBackground: skullPosition === 3 ? `<div class="inner_html"><img width="100%" height="100%" src="images/skull.jpg"></img></div>` : `<div class="inner_html"><p>Try again!</p></div>`,
   callback: function () {
@@ -66,6 +69,7 @@ const sc4 = new ScratchCard('#js--sc--container-4', {
 
 const sc5 = new ScratchCard('#js--sc--container-5', {
   ...scratchcardConfig,
+  containerWidth: scContainer5.offsetWidth,
   imageForwardSrc: 'images/tr.jpg',
   htmlBackground: skullPosition === 4 ? `<div class="inner_html"><img width="100%" height="100%" src="images/skull.jpg"></img></div>` : `<div class="inner_html"><p>Try again!</p></div>`,
   callback: function () {
@@ -78,6 +82,7 @@ const sc5 = new ScratchCard('#js--sc--container-5', {
 
 const sc6 = new ScratchCard('#js--sc--container-6', {
   ...scratchcardConfig,
+  containerWidth: scContainer6.offsetWidth,
   imageForwardSrc: 'images/gr.jpg',
   htmlBackground: skullPosition === 5 ? `<div class="inner_html"><img width="100%" height="100%" src="images/skull.jpg"></img></div>` : `<div class="inner_html"><p>Try again!</p></div>`,
   callback: function () {
